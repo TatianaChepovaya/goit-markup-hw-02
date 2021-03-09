@@ -1,0 +1,58 @@
+:root {
+  --main-bg-gray: #2f303a;
+}
+body {
+  font-family: 'Roboto';
+  color: #212121;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+}
+.logo-color {
+  color: #2196f3;
+}
+.logo-color-two {
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+a[href='mailto:info@example.com'] {
+  color: #757575;
+}
+a[href='tel:+380991111111'] {
+  color: #757575;
+}
+.banner {
+  color: #ffffff;
+  background-color: var(--main-bg-gray);
+  height: 600px;
+  font-size: 44px;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
+button[type='button'] {
+  background: #2196f3;
+  color: #ffffff;
+}
+nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+footer {
+  background-color: var(--main-bg-gray);
+  height: 252px;
+}
+.location {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
