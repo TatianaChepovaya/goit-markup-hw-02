@@ -6,10 +6,13 @@
 }
 body {
   font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
   color: #212121;
 }
 a {
-  color: #212121;
+  color: inherit;
   text-decoration: none;
 }
 .logo {
@@ -17,16 +20,23 @@ a {
   font-weight: bold;
   font-size: 26px;
 }
+.logo-color {
+  color: var(--main-accent);
+}
 ul {
   list-style-type: none;
 }
 .menu-list {
   font-weight: 500;
-  font-size: 14px;
   line-height: 16px;
+}
+.menu-item:hover,
+.menu-item:focus {
+  color: var(--main-accent);
 }
 .contact-link {
   color: var(--main-text-color);
+  font-weight: 500;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -36,38 +46,61 @@ ul {
   color: #ffffff;
   background-color: var(--main-bg-color);
   height: 600px;
+}
+.banner-title {
+  font-weight: 900;
   font-size: 44px;
+  line-height: 60px;
+}
+.banner-title{
   text-align: center;
 }
 button {
   cursor: pointer;
 }
-.order {
+.banner-button {
   color: var(--main-light);
   background-color: var(--main-accent);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
 }
-.features {
-  font-size: 14px;
+.features-title {
+  display: none;
+}
+.feature-title {
+  font-weight: bold;
   line-height: 16px;
 }
-.features-text {
-  font-size: 14px;
-  line-height: 24px;
+.feature-text {
   color: var(--main-text-color);
 }
-
+.team-title,
+.service-title {
+  text-align: center;
+  font-weight: bold;
+   font-size: 36px;
+l  line-height: 42px;
+}
+.team {
+  background-color: #f5f4fa;
+}
+.name-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.post-text {
+  color: var(--main-text-color);
+    font-size: 16px;
+   line-height: 19px;
+}
 footer {
   background-color: var(--main-bg-color);
   height: 252px;
 }
 .location {
   color: #ffffff;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-}
-.logo-color {
-  color: var(--main-accent);
 }
 footer .logo {
   color: #ffffff;
