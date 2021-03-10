@@ -1,34 +1,40 @@
 :root {
-  --main-bg-gray: #2f303a;
+  --main-bg-color: #2f303a;
+  --main-text-color: #757575;
+  --main-accent: #2196f3;
+  --main-light: #ffffff;
 }
 body {
   font-family: 'Roboto';
   color: #212121;
 }
-
+a {
+  color: #212121;
+  text-decoration: none;
+}
 .logo {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
 }
-.logo-color {
-  color: #2196f3;
+ul {
+  list-style-type: none;
 }
-.logo-color-two {
-  color: #ffffff;
+.menu-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
 }
-a {
-  text-decoration: none;
+.contact-link {
+  color: var(--main-text-color);
 }
-a[href='mailto:info@example.com'] {
-  color: #757575;
-}
-a[href='tel:+380991111111'] {
-  color: #757575;
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--main-accent);
 }
 .banner {
   color: #ffffff;
-  background-color: var(--main-bg-gray);
+  background-color: var(--main-bg-color);
   height: 600px;
   font-size: 44px;
   text-align: center;
@@ -36,18 +42,22 @@ a[href='tel:+380991111111'] {
 button {
   cursor: pointer;
 }
-button[type='button'] {
-  background: #2196f3;
-  color: #ffffff;
+.order {
+  color: var(--main-light);
+  background-color: var(--main-accent);
 }
-nav {
-  font-weight: 500;
+.features {
   font-size: 14px;
   line-height: 16px;
 }
+.features-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--main-text-color);
+}
 
 footer {
-  background-color: var(--main-bg-gray);
+  background-color: var(--main-bg-color);
   height: 252px;
 }
 .location {
@@ -55,4 +65,10 @@ footer {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+}
+.logo-color {
+  color: var(--main-accent);
+}
+footer .logo {
+  color: #ffffff;
 }
