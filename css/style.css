@@ -6,7 +6,6 @@
   --bg-light-color: #f5f4fa;
   --primary-letter-spacing: 0.06em;
   --primary-line-height: 1.14;
-  --primary-font-weight: 700;
   --secondary--font-weight: 500;
 }
 body {
@@ -23,7 +22,7 @@ body {
 }
 .logo {
   font-family: Raleway, sans-serif;
-  font-weight: var(--primary-font-weigh);
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -73,7 +72,7 @@ button {
   cursor: pointer;
 }
 .banner-button {
-  font-weight: var(--primary-font-weigh);
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
@@ -97,7 +96,7 @@ button {
   overflow: hidden;
 }
 .feature-title {
-  font-weight: var(--primary-font-weigh);
+  font-weight: 700;
   line-height: var(--primary-line-height);
   text-transform: uppercase;
 }
@@ -107,7 +106,7 @@ button {
 .service-title,
 .team-title {
   text-align: center;
-  font-weight: var(--primary-font-weigh);
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
 }
@@ -155,7 +154,7 @@ address {
   color: var(--main-light-color);
 }
 .catalog-title {
-  font-weight: var(--primary-font-weigh);
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: var(--primary-letter-spacing);
