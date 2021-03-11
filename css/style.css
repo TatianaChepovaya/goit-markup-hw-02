@@ -1,107 +1,168 @@
 :root {
   --main-bg-color: #2f303a;
   --main-text-color: #757575;
-  --main-accent: #2196f3;
-  --main-light: #ffffff;
+  --main-accent-color: #2196f3;
+  --main-light-color: #ffffff;
+  --bg-light-color: #f5f4fa;
+  --primary-letter-spacing: 0.06em;
+  --primary-line-height: 1.14;
+  --primary-font-weight: 700;
+  --secondary--font-weight: 500;
 }
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: #212121;
 }
-a {
-  color: inherit;
+.link {
   text-decoration: none;
+  color: inherit;
 }
 .logo {
-  font-family: Raleway;
-  font-weight: bold;
+  font-family: Raleway, sans-serif;
+  font-weight: var(--primary-font-weigh);
   font-size: 26px;
+  line-height: 1.19;
 }
 .logo-color {
-  color: var(--main-accent);
+  color: var(--main-accent-color);
 }
-ul {
+.list {
   list-style-type: none;
 }
 .menu-list {
-  font-weight: 500;
-  line-height: 16px;
+  font-weight: var(--secondary--font-weight);
+  line-height: var(--primary-line-height);
+  letter-spacing: 0.02em;
 }
 .menu-item:hover,
 .menu-item:focus {
-  color: var(--main-accent);
+  color: var(--main-accent-color);
+}
+.current {
+  color: var(--main-accent-color);
+}
+.contact-list {
+  font-weight: var(--secondary--font-weight);
+  line-height: var(--primary-line-height);
 }
 .contact-link {
   color: var(--main-text-color);
-  font-weight: 500;
 }
 .contact-link:hover,
 .contact-link:focus {
-  color: var(--main-accent);
+  color: var(--main-accent-color);
 }
 .banner {
-  color: #ffffff;
-  background-color: var(--main-bg-color);
   height: 600px;
+  background-color: var(--main-bg-color);
 }
 .banner-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-}
-.banner-title{
+  line-height: 1.36;
+  letter-spacing: var(--primary-letter-spacing);
+  text-transform: uppercase;
   text-align: center;
+  color: var(--main-light-color);
 }
 button {
   cursor: pointer;
 }
 .banner-button {
-  color: var(--main-light);
-  background-color: var(--main-accent);
-  font-weight: bold;
+  font-weight: var(--primary-font-weigh);
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: var(--primary-letter-spacing);
+  color: var(--main-light-color);
+  background-color: var(--main-accent-color);
 }
-.features-title {
-  display: none;
+.banner-button:hover,
+.banner-button:focus {
+  background-color: #188ce8;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 .feature-title {
-  font-weight: bold;
-  line-height: 16px;
+  font-weight: var(--primary-font-weigh);
+  line-height: var(--primary-line-height);
+  text-transform: uppercase;
 }
 .feature-text {
   color: var(--main-text-color);
 }
-.team-title,
-.service-title {
+.service-title,
+.team-title {
   text-align: center;
-  font-weight: bold;
-   font-size: 36px;
-l  line-height: 42px;
+  font-weight: var(--primary-font-weigh);
+  font-size: 36px;
+  line-height: 1.16;
 }
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--bg-light-color);
 }
-.name-title {
-  font-weight: 500;
+.team-list {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
+  text-align: center;
 }
-.post-text {
+.team-item {
+  background-color: var(--main-light-color);
+}
+.team-item-title {
+  font-weight: var(--secondary--font-weight);
+}
+.team-item-position {
   color: var(--main-text-color);
-    font-size: 16px;
-   line-height: 19px;
 }
 footer {
   background-color: var(--main-bg-color);
   height: 252px;
 }
-.location {
-  color: #ffffff;
-}
 footer .logo {
-  color: #ffffff;
+  color: var(--main-light-color);
+}
+address {
+  font-style: normal;
+}
+.location {
+  color: var(--main-light-color);
+}
+
+.filter-button {
+  font-weight: var(--secondary--font-weight);
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--bg-light-color);
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--main-accent-color);
+  color: var(--main-light-color);
+}
+.catalog-title {
+  font-weight: var(--primary-font-weigh);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: var(--primary-letter-spacing);
+}
+.catalog-filter {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--main-text-color);
 }
